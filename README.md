@@ -9,6 +9,15 @@ Desarrolle un algoritmo que sea capaz de encontrar un número dentro de una list
 > - El algoritmo debe indicar si el número se encuentra en la lista o no, y en caso afirmativo, mostrar la posición del número dentro de la lista.
 > - El algoritmo debe manejar el caso en que el número no se encuentre en la lista, mostrando un mensaje adecuado.
 
+lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+numero = int(input("Indique el numero que desea encontrar: "))
+
+if numero in lista:
+    posicion = lista.index(numero)
+    print(f"El numero {numero}, si esta en la lista, en la posición {posicion}")
+else:
+    print("El numero no esta en la lista.")
+
 ## Ejercicio 2
 
 Cree un programa que reciba una cadena de texto e indique cuántas vocales y cuántas consonantes contiene.
